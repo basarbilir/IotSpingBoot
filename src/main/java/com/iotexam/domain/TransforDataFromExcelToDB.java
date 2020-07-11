@@ -64,7 +64,7 @@ public class TransforDataFromExcelToDB {
                             break;
                         case 1:
                             Long idForRow = (long) nextCell.getNumericCellValue();
-                            variableCluster.setRowId(idForRow);
+                            variableCluster.setRowid(idForRow);
                             break;
                         case 2:
                             String aValue =  nextCell.getStringCellValue();
@@ -84,11 +84,11 @@ public class TransforDataFromExcelToDB {
                             break;
                         case 6:
                             Integer bitPosition = (int) nextCell.getNumericCellValue();
-                            variableCluster.setBitPosition(bitPosition);
+                            variableCluster.setBit_position(bitPosition);
                             break;
                         case 7:
                             String buttonPath =  nextCell.getStringCellValue();
-                            variableCluster.setButtonPath(buttonPath);
+                            variableCluster.setButtonpath(buttonPath);
                             break;
                         case 8:
                             String code =  nextCell.getStringCellValue();
@@ -100,7 +100,7 @@ public class TransforDataFromExcelToDB {
                             break;
                         case 10:
                             Integer defaultValue = (int) nextCell.getNumericCellValue();
-                            variableCluster.setDefaultValue(defaultValue);
+                            variableCluster.setDefaultvalue(defaultValue);
                             break;
                         case 11:
                             Integer delay = (int) nextCell.getNumericCellValue();
@@ -124,31 +124,31 @@ public class TransforDataFromExcelToDB {
                             break;
                         case 16:
                             String functionCode =  nextCell.getStringCellValue();
-                            variableCluster.setFunctionCode(functionCode);
+                            variableCluster.setFunctioncode(functionCode);
                             break;
                         case 17:
                             Integer grpCategory = (int) nextCell.getNumericCellValue();
-                            variableCluster.setGrpCategory(grpCategory);
+                            variableCluster.setGrpcategory(grpCategory);
                             break;
                         case 18:
                             Integer idGroup = (int) nextCell.getNumericCellValue();
-                            variableCluster.setIdGroup(idGroup);
+                            variableCluster.setIdgroup(idGroup);
                             break;
                         case 19:
                             Integer idHshVariable = (int) nextCell.getNumericCellValue();
-                            variableCluster.setIdHshVariable(idHshVariable);
+                            variableCluster.setIdhsvariable(idHshVariable);
                             break;
                         case 20:
                             Integer idVarmdl = (int) nextCell.getNumericCellValue();
-                            variableCluster.setIdVarmdl(idVarmdl);
+                            variableCluster.setIdvarmdl(idVarmdl);
                             break;
                         case 21:
                             Integer idVariable = (int) nextCell.getNumericCellValue();
-                            variableCluster.setIdVariable(idVariable);
+                            variableCluster.setIdvariable(idVariable);
                             break;
                         case 22:
                             String imageOff =  nextCell.getStringCellValue();
-                            variableCluster.setImageOff(imageOff);
+                            variableCluster.setImageoff(imageOff);
                             break;
                         case 23:
                             String imageOn =  nextCell.getStringCellValue();
@@ -159,31 +159,31 @@ public class TransforDataFromExcelToDB {
                             //String pureDateString =  dateString.substring(0, dateString.length() - 1);
                             //String pureDateString = "22-01-2015 10:15:55 AM";
                             LocalDateTime localDateTime = LocalDateTime.from(formatter.parse(dateString));
-                            variableCluster.setInsertTime(localDateTime);
+                            variableCluster.setInserttime(localDateTime);
                             break;
                         case 25:
                             Boolean isActive =  Boolean.parseBoolean(nextCell.getStringCellValue());
-                            variableCluster.setIsActive(isActive);
+                            variableCluster.setIsactive(isActive);
                             break;
                         case 26:
                             Boolean isCancelled =  Boolean.parseBoolean(nextCell.getStringCellValue());
-                            variableCluster.setIsCancelled(isCancelled);
+                            variableCluster.setIscancelled(isCancelled);
                             break;
                         case 27:
                             Boolean isHaccp =  Boolean.parseBoolean(nextCell.getStringCellValue());
-                            variableCluster.setIsHaccp(isHaccp);
+                            variableCluster.setIshaccp(isHaccp);
                             break;
                         case 28:
                             Boolean isLogic =  Boolean.parseBoolean(nextCell.getStringCellValue());
-                            variableCluster.setIsLogic(isLogic);
+                            variableCluster.setIslogic(isLogic);
                             break;
                         case 29:
                             Boolean isOnChange =  Boolean.parseBoolean(nextCell.getStringCellValue());
-                            variableCluster.setIsOnchange(isOnChange);
+                            variableCluster.setIsonchange(isOnChange);
                             break;
                         case 30:
                             LocalDateTime lastUpdate = LocalDateTime.from(formatter.parse(nextCell.getStringCellValue()));
-                            variableCluster.setLastUpdate(lastUpdate);
+                            variableCluster.setLastupdate(lastUpdate);
                             break;
                         case 31:
                             Integer length = (int) nextCell.getNumericCellValue();
@@ -195,7 +195,7 @@ public class TransforDataFromExcelToDB {
                             break;
                         case 33:
                             String measureUnit = nextCell.getStringCellValue();
-                            variableCluster.setMeausereUnit(measureUnit);
+                            variableCluster.setMeausereunit(measureUnit);
                             break;
                         case 34:
                             String minimum = nextCell.getStringCellValue();
@@ -207,7 +207,7 @@ public class TransforDataFromExcelToDB {
                             break;
                         case 36:
                             Integer readWrite = (int)  nextCell.getNumericCellValue();
-                            variableCluster.setReadWrite(readWrite);
+                            variableCluster.setReadwrite(readWrite);
                             break;
                         case 37:
                             Boolean signed = Boolean.parseBoolean(nextCell.getStringCellValue());
@@ -215,7 +215,7 @@ public class TransforDataFromExcelToDB {
                             break;
                         case 38:
                             String toDisplay = nextCell.getStringCellValue();
-                            variableCluster.setToDisplay(toDisplay);
+                            variableCluster.setTodisplay(toDisplay);
                             break;
                         case 39:
                             Integer type = (int) nextCell.getNumericCellValue();
@@ -223,15 +223,15 @@ public class TransforDataFromExcelToDB {
                             break;
                         case 40:
                             String varEncoding = nextCell.getStringCellValue();
-                            variableCluster.setVarEncoding(varEncoding);
+                            variableCluster.setVarencoding(varEncoding);
                             break;
                         case 41:
                             String detailId = nextCell.getStringCellValue();
-                            variableCluster.setDetailId(detailId);
+                            variableCluster.setDetailid(detailId);
                             break;
                         case 42:
                             String deviceModel = nextCell.getStringCellValue();
-                            variableCluster.setDeviceModel(deviceModel);
+                            variableCluster.setDevicemodel(deviceModel);
                             break;
                     }
 

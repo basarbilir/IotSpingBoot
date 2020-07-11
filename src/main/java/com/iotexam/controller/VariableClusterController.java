@@ -16,7 +16,7 @@ import java.util.List;
 
 @RestController
 @Data
-@RequestMapping("/variabless")
+@RequestMapping("/variables")
 @AllArgsConstructor
 public class VariableClusterController {
 
@@ -37,6 +37,7 @@ public class VariableClusterController {
 
     @GetMapping
     public ResponseEntity<List<VariableCluster>> getAllStudents() {
+        //Optional<VariableCluster> all = variableClusterMongoRepository.findById("5f024b3f749780487c1e1d71");
         List<VariableCluster> all = variableClusterMongoRepository.findAll();
 
         return ResponseEntity.ok(all);
